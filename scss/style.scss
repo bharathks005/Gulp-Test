@@ -1,0 +1,16 @@
+
+@import "variable";
+@import "mixin";
+
+body {
+  color: $primary-color;
+  background: $primary-bg;
+  display: flex;
+}
+
+.card-1 {
+    @include card(300px, 200px, yellow, red 2px solid);
+  }
+  .card-2 {
+    @include card(400px, 300px, lightblue, black 1px dotted);
+  }
